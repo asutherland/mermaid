@@ -1,0 +1,69 @@
+g.classGroup text {
+  fill: @classTextColor;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 14px;
+}
+
+g.classGroup rect {
+  fill: @classBkg;
+  stroke: @classBorder;
+}
+
+g.classGroup line {
+  stroke: @classBorder;
+  stroke-width:1;
+}
+
+svg .classLabel .box {
+  stroke: none;
+  stroke-width:0;
+  fill: @classLabelBoxBkgColor;
+  opacity: 0.5;
+}
+
+svg .classLabel .label {
+  fill: @classLabelTextColor;
+}
+
+.relation {
+  stroke: @relationLineColor;
+  stroke-width: 1;
+  fill:none;
+}
+
+.composition{
+  fill : @relationLineColor;
+  stroke: @relationLineColor;
+  stroke-width:1;
+}
+#compositionStart {
+  .composition;
+}
+#compositionEnd {
+  .composition;
+}
+.aggregation{
+  fill : @relationHollowColor;
+  stroke: @relationLineColor;
+  stroke-width:1;
+}
+#aggregationStart {
+  .aggregation;
+}
+#aggregationEnd {
+  .aggregation;
+}
+
+#dependencyStart {
+  .composition;
+}
+#dependencyEnd {
+  .composition;
+}
+#extensionStart {
+  .aggregation;
+}
+#extensionEnd {
+  .aggregation;
+}
