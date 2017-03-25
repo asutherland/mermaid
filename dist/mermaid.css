@@ -1,5 +1,6 @@
 /* Flowchart variables */
 /* Sequence Diagram variables */
+/* Class Diagram variables */
 /* Gantt chart variables */
 .mermaid .label {
   color: #333;
@@ -11,6 +12,9 @@
   fill: #ECECFF;
   stroke: #CCCCFF;
   stroke-width: 1px;
+}
+.arrowheadPath {
+  fill: #333333;
 }
 .edgePath .path {
   stroke: #333333;
@@ -254,6 +258,84 @@ text.actor {
 
 
 */
+g.classGroup text {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 14px;
+}
+g.classGroup rect {
+  fill: #ECECFF;
+  stroke: #CCCCFF;
+}
+g.classGroup line {
+  stroke: #CCCCFF;
+  stroke-width: 1;
+}
+svg .classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5;
+}
+svg .classLabel .label {
+  fill: black;
+}
+.relation {
+  stroke: grey;
+  stroke-width: 1;
+  fill: none;
+}
+.composition {
+  fill: grey;
+  stroke: grey;
+  stroke-width: 1;
+}
+#compositionStart {
+  fill: grey;
+  stroke: grey;
+  stroke-width: 1;
+}
+#compositionEnd {
+  fill: grey;
+  stroke: grey;
+  stroke-width: 1;
+}
+.aggregation {
+  fill: #ECECFF;
+  stroke: grey;
+  stroke-width: 1;
+}
+#aggregationStart {
+  fill: #ECECFF;
+  stroke: grey;
+  stroke-width: 1;
+}
+#aggregationEnd {
+  fill: #ECECFF;
+  stroke: grey;
+  stroke-width: 1;
+}
+#dependencyStart {
+  fill: grey;
+  stroke: grey;
+  stroke-width: 1;
+}
+#dependencyEnd {
+  fill: grey;
+  stroke: grey;
+  stroke-width: 1;
+}
+#extensionStart {
+  fill: #ECECFF;
+  stroke: grey;
+  stroke-width: 1;
+}
+#extensionEnd {
+  fill: #ECECFF;
+  stroke: grey;
+  stroke-width: 1;
+}
 .node text {
   font-family: 'trebuchet ms', verdana, arial;
   font-size: 14px;
